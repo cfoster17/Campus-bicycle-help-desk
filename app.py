@@ -1,48 +1,45 @@
-# CIS 211 Lab 4 starter
-# Build a fictional campus club or service information page.
-# Read CIS_211_Lab4_Guide.pdf before editing this file.
-# This starter runs, but its TODO sections are not a completed submission.
 
-import streamlit as st
 
-# TODO 1: Replace these values with your own fictional club or service details.
-# Keep at least three key-value pairs. You may add more.
+
+
+
+
+
+
+
 club_info = {
-    "name": "Your fictional club",
-    "day": "Choose a fictional meeting day",
-    "time": "Choose a fictional meeting time",
+    "name": "Campus Bicycle Help Desk",
+    "day": "Wednesday",
+    "time": "3:00 PM - 5:00 PM ",
+    "location": "Student Union Quad",
 }
-
-# TODO 2: Replace these sample strings with at least three relevant activities.
-# During the list change check, add one new item and keep it in the final app.
 activities = [
-    "Replace with your first activity",
-    "Replace with your second activity",
-    "Replace with your third activity",
+    "Free bicycle safety and brake checks",
+    "Flat tire repair and inner tube replacements",
+    "Chair cleaning, lubrication, and gear tuning",
 ]
-
-st.title(club_info["name"])
+st.title(club_info["Campus bicycle help desk"])
 st.caption("A fictional CIS 211 course project. These are not real campus arrangements.")
-
-# Remove this starter message when your page is complete.
 st.write("Starter page: complete the TODO sections using the Lab 4 guide.")
 
 st.header("About this club or service")
-# TODO 3: Use st.markdown() to write your own two- or three-sentence introduction.
-# Include both **bold** and *italic* text inside your Python string.
-# The handout explains triple quotes if your Markdown spans several lines.
+(""" Welcome to the **Campus Bicycle Help Desk**, your student-run resource for keeping two wheels rolling smoothly! We provide *hands-on assistance* and guidance for routine bicycle maintenance right in the beart of campus""").
 
 st.header("Activities or services")
 # TODO 4: Write a for loop that displays every value from activities.
-# Use Streamlit output inside the loop. Do not type each activity again.
+st.write(f"- {activity}")
 
 st.header("Details")
-# TODO 5: Display at least two dictionary values by looking them up by key.
-# Give the displayed values meaningful labels such as Day and Time.
+st.write(f"**Meeting Day: ** {club_info['day']}
+st.write(f"**Meeting Time:** {club_info['time']}"
+st.write(f"**Location:** {club_info['location']}")
 
 st.header("Prepare for a visit")
-# TODO 6: Use st.markdown() to display a three-item Markdown list.
-# Add one meaningful, working external Markdown link.
+st.markdown("""
+1. Bring your student ID and your bicycle.
+2. Check out the [League of American Bicylists] (https://www.bikeleague.org) for safety guides.
+3. Wear clothes you dont mind getting a little grease on !""")
+
 
 # TODO 7: Add at least three comments explaining your OWN completed code.
 # TODO 8: Perform both change checks and complete the private submission template.
